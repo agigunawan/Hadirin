@@ -79,17 +79,17 @@
     </div>
 
     <!-- Events List Card -->
-    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
-        <div class="overflow-x-auto">
-            <table class="w-full text-left text-xs">
+    <div class="bg-white rounded-2xl md:rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="overflow-x-auto w-full">
+            <table class="w-full text-left text-xs min-w-[860px]">
                 <thead>
                     <tr class="bg-slate-50/80 border-b border-slate-200 text-slate-400 uppercase tracking-wider text-[10px]">
-                        <th class="py-3.5 px-4">Nama Kegiatan</th>
-                        <th class="py-3.5 px-4">Ruangan & Jam</th>
-                        <th class="py-3.5 px-4">Penyelenggara</th>
-                        <th class="py-3.5 px-4">Status & Presensi</th>
-                        <th class="py-3.5 px-4 text-center">Tautan QR</th>
-                        <th class="py-3.5 px-4 text-right">Aksi Manajemen</th>
+                        <th class="py-3 px-4 min-w-[200px]">Nama Kegiatan</th>
+                        <th class="py-3 px-3 min-w-[130px]">Ruangan & Jam</th>
+                        <th class="py-3 px-3 min-w-[130px]">Penyelenggara</th>
+                        <th class="py-3 px-3 min-w-[120px]">Status & Presensi</th>
+                        <th class="py-3 px-3 text-center min-w-[90px]">Tautan QR</th>
+                        <th class="py-3 px-4 text-right min-w-[180px]">Aksi Manajemen</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-100">

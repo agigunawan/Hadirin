@@ -16,8 +16,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 </head>
-<body class="h-full font-sans antialiased bg-slate-50 text-slate-800" x-data="{ sidebarOpen: false }">
-    <div class="min-h-full flex flex-col md:flex-row">
+<body class="h-full font-sans antialiased bg-slate-50 text-slate-800 overflow-x-hidden" x-data="{ sidebarOpen: false }">
+    <div class="min-h-full flex flex-col md:flex-row w-full min-w-0">
         <!-- Mobile Sidebar Backdrop -->
         <div x-show="sidebarOpen" 
              x-transition:enter="transition-opacity ease-linear duration-300"
@@ -103,7 +103,7 @@
         </aside>
 
         <!-- Main Content Area -->
-        <div class="flex-1 md:pl-72 flex flex-col min-h-screen">
+        <div class="flex-1 md:pl-72 flex flex-col min-h-screen min-w-0 w-full">
             <!-- Top Mobile Bar -->
             <header class="h-16 bg-white border-b border-slate-200 px-4 flex items-center justify-between md:hidden">
                 <button @click="sidebarOpen = true" class="p-2 text-slate-600 hover:text-slate-900 focus:outline-none">
@@ -116,7 +116,7 @@
             </header>
 
             <!-- Page Content -->
-            <main class="flex-1 p-4 md:p-8 max-w-7xl w-full mx-auto">
+            <main class="flex-1 p-4 sm:p-6 lg:p-8 w-full max-w-full min-w-0 mx-auto">
                 <!-- Flash Notification Messages -->
                 @if(session('success'))
                     <div class="mb-6 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-start gap-3 shadow-sm animate-fade-in">

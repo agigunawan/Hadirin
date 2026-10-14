@@ -39,9 +39,9 @@
     </div>
 
     <!-- Audit Table Card -->
-    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
-        <div class="overflow-x-auto">
-            <table class="w-full text-left text-xs">
+    <div class="bg-white rounded-2xl md:rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="overflow-x-auto w-full">
+            <table class="w-full text-left text-xs min-w-[700px]">
                 <thead>
                     <tr class="bg-slate-50/80 border-b border-slate-200 text-slate-400 uppercase tracking-wider text-[10px]">
                         <th class="py-3.5 px-4">Waktu (WIB)</th>
